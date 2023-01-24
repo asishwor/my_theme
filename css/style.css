@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+    --primary-color:blue;
+
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu li {
+  margin-right: 20px;
+  list-style: none;
+}
+.menu li a {
+  color: #fff;
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+header{
+    background-color: black;
+    color: #fff;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.menu .current-menu-item a{
+    color: red;
+    border-bottom: 1px solid red;
+    
+}
