@@ -11,7 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/grid.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/media.css">
     <style type="text/css">
     :root {
