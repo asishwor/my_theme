@@ -1,19 +1,26 @@
 <?php
 get_header();
 ?>
-<div class="container">
-    <h2>
-        <?php echo the_title(); ?>
-    </h2>
-    <!-- post thumbnail image displaying -->
-    <?php
-    the_post_thumbnail('full');
+
+<section>
+    <?php if (have_posts()) {
+
+        while (have_posts()) {
+
+            the_post();
+            the_content();
+
+        }
+
+    } else {
+
+        echo '<p>No posts Found</p>';
+    }
+
+
     ?>
-    <!-- showing  display content on page -->
-    <?php
-    echo the_content();
-    ?>
-</div>
+
+</section>
 <?php
 get_footer();
 ?>
