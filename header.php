@@ -12,8 +12,6 @@
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/grid.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/media.css">
     <style type="text/css">
     :root {
@@ -34,6 +32,18 @@
         ?>;
     }
 
+    @media (min-width:768px) {
+        .sidebar {
+            width:
+                <?php echo get_theme_mod('sidebar_setting', 30) . '%'?>;
+            position: sticky;
+            align-self: self-start;
+            top: 40px;
+            padding-right: 10px;
+        }
+    }
+
+
     h1,
     h2,
     h3,
@@ -44,9 +54,30 @@
         font-family: var(--heading-font-family);
     }
 
+    h1 {
+        font-size:
+            <?php echo get_theme_mod('h1_font', '34') . 'px';
+        ?>;
+
+    }
+
     h2 {
         font-size:
-            <?php echo get_theme_mod('h2_font', '34px') . 'px';
+            <?php echo get_theme_mod('h2_font', '24') . 'px';
+        ?>;
+
+    }
+
+    h3 {
+        font-size:
+            <?php echo get_theme_mod('h3_font', '18') . 'px';
+        ?>;
+
+    }
+
+    h4 {
+        font-size:
+            <?php echo get_theme_mod('h4_font', '16') . 'px';
         ?>;
 
     }
