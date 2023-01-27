@@ -14,5 +14,6 @@ Content;
 
 
  -->
+<?php the_content(); ?>
 <!-- Footer -->
 <?php get_footer(); ?>
